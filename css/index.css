@@ -1,0 +1,63 @@
+*{margin:0;padding:0;list-style:none;}
+a{text-decoration: none;color: #fff;}
+#flash{
+  width: 730px;
+  height: 454px;
+  margin: 100px auto;
+  position: relative;
+  cursor: pointer;
+}
+#pic li{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+#num{
+  position: absolute;
+  left: 40%;
+  bottom: 10px;
+  z-index: 2;
+  cursor:default;
+}
+#num li{
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #666;
+  margin: 3px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+#num li.active{
+  background: #f00;
+}
+.arrow{
+  height: 60px;
+  width: 30px;
+  line-height: 60px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  top:45%;
+  z-index: 3;
+  display: none;
+  /* transition: left 0.5s;  将left属性完成的时间设定为0.5s。*/
+}
+.arrow:hover{
+  background: red;
+  border-radius: 50%;
+}
+#flash:hover .arrow{
+  display: block;
+}
+#left{
+  left: 2%;
+}
+#right{
+  right: 2%;
+}
